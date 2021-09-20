@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>ФрешОк | Онлайн Маркет</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="wrapper">
+          <ul class="contact">
+            <li class="contact__item">
+              <a class="contact__link contact__link--delivery" href="#">
+                АДРЕС И ВРЕМЯ ДОСТАВКИ
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link contact__link--phone" href="#">
+                ГОРЯЧАЯ ЛИНИЯ 24/7
+              </a>
+            </li>
+          </ul>
+
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  ДОСТАВКА
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  О НАС
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  НОВОСТИ
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__inner">
+      <div class="container">
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
+          </a>
+
+          <button class="products" type="button">
+            Каталог продуктов
+          </button>
+
+          <div class="search">
+            <input class="search__field" type="text" placeholder="Найти в магазине ...">
+            <button class="search__btn" type="button">ПОИСК</button>
+          </div>
+
+          <ul class="user-nav">
+            <li class="user-nav__item">
+              <a href="" class="user-nav__link" style="background-image: url('images/icons/user-link.svg')"></a>
+            </li>
+            <li class="user-nav__item">
+              <a href="" class="user-nav__link" style="background-image: url('images/icons/icon-heart.svg')">
+                <span class="user-nav__num">12</span>
+              </a>
+            </li>
+            <li class="user-nav__item">
+              <a href="" class="user-nav__link" style="background-image: url('images/icons/icon-cart.svg')">
+                <span class="user-nav__num">12</span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="slider">
+      <div class="slider__item" style="background-image: url('../images/slider/slide-1.jpg')">
+        <div class="container">
+          <div class="slider__content">
+            <h3 class="slider__title">
+              СВЕЖАЧОК ВАМ в ХАТУ
+              <span class="slider__title slider__title--red">Скидка -50%</span>
+            </h3>
+            <p class="slider__text">
+              Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
+            </p>
+            <a class="slider__link" href="">Купить сейчас</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider__item" style="background-image: url('../images/slider/slide-2.jpg')">
+        <div class="container">
+          <div class="slider__content">
+            <h3 class="slider__title">
+              НАКРУТИ СЕБЕ ТОМАТОВ
+              <span class="slider__title slider__title--red">АКЦИЯ: 3 кг по цене 1</span>
+            </h3>
+            <p class="slider__text">
+              Только с 12 по 15 июля скидка на домашние помидорчики
+            </p>
+            <a class="slider__link" href="">Купить сейчас</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider__item" style="background-image: url('../images/slider/slide-3.jpg')">
+        <div class="container">
+          <div class="slider__content">
+            <h3 class="slider__title">
+              Пусть остальные
+              позеленеют от зависти
+              <span class="slider__title slider__title--red">Распродажа зелени</span>
+            </h3>
+            <a class="slider__link" href="">Купить сейчас</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="service">
+      <div class="container">
+        <ul class="service__inner">
+          <li class="service__box" style="background-image: url('images/icons/scooter\ 1.svg')">
+            <p class="service__title">
+              Бесплатная доставка
+            </p>
+            <p class="service__text">
+              Для заказов на сумму от 500 ₽
+            </p>
+          </li>
+          <li class="service__box" style="background-image: url('images/icons/return-box\ 1.svg')">
+            <p class="service__title">
+              Возврат товара
+            </p>
+            <p class="service__text">
+              Если товары были испорчены
+            </p>
+          </li>
+          <li class="service__box" style="background-image: url('images/icons/24-hours-1.svg')">
+            <p class="service__title">
+              Поддержка 24/7
+            </p>
+            <p class="service__text">
+              Лучшие операторы
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="top">
+      <div class="container">
+        <h2 class="title">
+          Мои работы
+        </h2>
+
+        <ul class="filter">
+          <li class="filter__item">
+            <button class="filter__button" type="button" data-filter="all">Все товары</button>
+          </li>
+
+          <li class="filter__item">
+            <button class="filter__button" type="button" data-filter=".category-1">Фрукты</button>
+          </li>
+
+          <li class="filter__item">
+            <button class="filter__button" type="button" data-filter=".category-2">ОВОЩИ</button>
+          </li>
+
+          <li class="filter__item">
+            <button class="filter__button" type="button" data-filter=".category-3">Напитки</button>
+          </li>
+
+          <li class="filter__item">
+            <button class="filter__button" type="button" data-filter=".category-3">БАКАЛЕЯ</button>
+          </li>
+        </ul>
+
+        <ul class="top__content">
+          <li class="top__item mix category-1">
+            <a href="images/top/pineapple.png">
+              <img class="top__img" src="images/top/pineapple.png" alt="">
+            </a>
+          </li>
+          <li class="top__item mix category-1">
+            <a href="images/works/work-2.jpg">
+              <img class="top__img" src="images/top/lemon.png" alt="">
+            </a>
+          </li>
+          <li class="top__item mix category-2">
+            <a href="images/works/work-3.jpg">
+              <img class="top__img" src="images/top/pitahaya.png" alt=""></a>
+          </li>
+          <li class="top__item mix category-2">
+            <a href="images/works/work-4.jpg">
+              <img class="top__img" src="images/top/peper.png" alt=""></a>
+          </li>
+          <li class="top__item mix category-3">
+            <a href="images/works/work-5.jpg">
+              <img class="top__img" src="images/top/carrot.png" alt="">
+            </a>
+          </li>
+          <li class="top__item mix category-3">
+            <a href="images/works/work-6.jpg">
+              <img class="top__img" src="images/top/drink.png" alt="">
+            </a>
+          </li>
+          <li class="top__item mix category-3">
+            <a href="images/works/work-6.jpg">
+              <img class="top__img" src="images/top/chocotale.png" alt="">
+            </a>
+          </li>
+          <li class="top__item mix category-4">
+            <a href="images/works/work-6.jpg">
+              <img class="top__img" src="images/top/ketchup.png" alt="">
+            </a>
+          </li>
+        </ul>
+
+        <button type="button" class="btn">
+          Показать ещё
+        </button>
+      </div>
+
+
+
+    </section>
+  </main>
+
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
