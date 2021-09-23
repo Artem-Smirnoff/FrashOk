@@ -181,6 +181,7 @@
     transition: box-shadow 0.4s, background-color 0.4s, color 0.4s;
     &:focus {
       box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+      outline: transparent;
     }
     &:hover {
       background-color: rgba(49, 53, 43, 0.85);
@@ -403,6 +404,35 @@
     transform: rotate(-15deg);
     top: 8px;
     left: -2px;
+  }
+}
+
+.btn {
+  display: block;
+  padding: 12px 24px;
+  background-color: $white;
+  border: 1px solid $green-900;
+  border-radius: 6px;
+  font-family: 'OpenSans-Regular';
+  font-weight: 400;
+  color: $green-900;
+  letter-spacing: 0.03em;
+  margin: 16px auto;
+  transition: color 0.4s,
+    background-color 0.4s, box-shadow 0.4s;
+
+  &:active {
+    color: #63A60E80;
+    box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover {
+    background-color: $green-100;
+  }
+
+  &:focus {
+    box-shadow: 0px 0px 0px 4px rgba(99, 166, 14, 0.5);
+    outline: transparent;
   }
 }
 

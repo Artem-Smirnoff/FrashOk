@@ -58,12 +58,16 @@ body {
   background-position: center;
   border-radius: 3px;
   transition: box-shadow 0.4s, background-color 0.4s;
+
   &:focus {
     box-shadow: 0px 0px 0px 4px #E0EDCF;
+    outline: transparent;
   }
+
   &:hover {
     background-color: #4D800C;
   }
+
   &:active {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: $green-900;
@@ -107,18 +111,5 @@ body {
   &__decor--sale {
     background-color: $red-900;
   }
-}
-
-.btn {
-  display: block;
-  padding: 12px 24px;
-  background-color: $white;
-  border: 1px solid $green-900;
-  border-radius: 6px;
-  font-family: 'OpenSans-Regular';
-  font-weight: 400;
-  color: $green-900;
-  letter-spacing: 0.03em;
-  margin: 16px auto;
 }
 
