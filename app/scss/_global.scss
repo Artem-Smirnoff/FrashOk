@@ -13,6 +13,26 @@ body {
   padding: 0 15px;
 }
 
+.animate {
+  transition: box-shadow 0.4s,
+    background-color 0.4s,
+    color 0.4s;
+
+  &:focus {
+    outline: transparent;
+    box-shadow: 0px 0px 0px 4px #E0EDCF;
+  }
+
+  &:hover {
+    background-color: #4D810C;
+  }
+
+  &:active {
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
 .slick-arrow {
   border: none;
   position: absolute;
@@ -125,6 +145,10 @@ body {
     background-position: center;
     width: 44px;
     height: 44px;
+    transition: opacity 0.4s;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__link--facebook {
