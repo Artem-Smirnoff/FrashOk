@@ -113,3 +113,51 @@ body {
   }
 }
 
+.social {
+  max-width: 230px;
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 44px;
+    height: 44px;
+  }
+
+  &__link--facebook {
+    background-image: url('../images/icons/facebook.svg');
+  }
+
+  &__link--youtube {
+    background-image: url('../images/icons/youtube.svg');
+  }
+
+  &__link--telegram {
+    background-image: url('../images/icons/telegram.svg');
+  }
+
+  &__link--instagram {
+    background-image: url('../images/icons/instagram.svg');
+  }
+}
+
+.pay {
+  display: flex;
+
+}
+
+.visa {
+  width: 93px;
+  height: 29px;
+  background-image: url('../images/icons/visa.svg');
+  margin-right: 24px;
+}
+
+.master-card {
+  width: 49px;
+  height: 29px;
+  background-image: url('../images/icons/mc.svg');
+}

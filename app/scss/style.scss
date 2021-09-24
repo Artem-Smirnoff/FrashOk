@@ -179,13 +179,16 @@
     background-color: $dark-800;
     color: $white;
     transition: box-shadow 0.4s, background-color 0.4s, color 0.4s;
+
     &:focus {
       box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
       outline: transparent;
     }
+
     &:hover {
       background-color: rgba(49, 53, 43, 0.85);
     }
+
     &:active {
       color: #ffffff80;
     }
@@ -442,13 +445,87 @@
 .footer {
   padding-top: 36px;
   background-color: $dark-800;
+  font-family: 'OpenSans-Regular';
+  font-weight: 400;
+  color: $white;
+  font-style: normal;
+
   &__inner {
     display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
   }
+
   &__form {
     padding-top: 30px;
   }
+
+  &__text {
+    margin-bottom: 18px;
+  }
+
+  &__email {
+    border-radius: 6px 0px 0px 6px;
+    padding: 12px;
+    border: none;
+    max-width: 180px;
+  }
+
+  &__button {
+    padding: 14px 10px 13px;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    margin-left: -4px;
+    font-family: 'OpenSans-Bold';
+    font-weight: 700;
+    font-size: 12px;
+    color: $white;
+    background-color: $green-900;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 467px;
+    width: 100%;
+  }
+
+  &__item-link {
+    display: inline-block;
+    color: $white;
+    padding: 12px 10px;
+  }
+
+  &__item {
+    margin-bottom: 18px;
+  }
+
+  &__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px 24px;
+  }
+  &__bottom-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
+
+.address {
+  font-style: normal;
+  &__phone {
+    display: block;
+    color: $white;
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    margin-bottom: 18px;
+  }
+}
+
+
 
 
 
