@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/png">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>ФрешОк | Онлайн Маркет</title>
+  <title>ФрешОк Онлайн магазин продуктов | Главная страница</title>
 </head>
 
 <body>
@@ -18,12 +18,12 @@
           <ul class="contact">
             <li class="contact__item">
               <a class="contact__link contact__link--delivery" href="#">
-                АДРЕС И ВРЕМЯ ДОСТАВКИ
+                адрес и время доставки
               </a>
             </li>
             <li class="contact__item">
               <a class="contact__link contact__link--phone" href="#">
-                ГОРЯЧАЯ ЛИНИЯ 24/7
+                горячая линия 24/7
               </a>
             </li>
           </ul>
@@ -32,17 +32,17 @@
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                  ДОСТАВКА
+                  доставка
                 </a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                  О НАС
+                  О нас
                 </a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">
-                  НОВОСТИ
+                  новости
                 </a>
               </li>
             </ul>
@@ -62,10 +62,10 @@
             Каталог продуктов
           </button>
 
-          <div class="search">
-            <input class="search__field" type="text" placeholder="Найти в магазине ...">
-            <button class="search__btn" type="button">ПОИСК</button>
-          </div>
+          <form class="search">
+            <input class="search__field" type="text" placeholder="Найти в магазине ..." required>
+            <button class="search__btn" type="button">поиск</button>
+          </form>
 
           <ul class="user-nav">
             <li class="user-nav__item">
@@ -94,13 +94,13 @@
         <div class="container">
           <div class="slider__content">
             <h3 class="slider__title">
-              СВЕЖАЧОК ВАМ в ХАТУ
+              свежачок вам в хату
               <span class="slider__title slider__title--red">Скидка -50%</span>
             </h3>
             <p class="slider__text">
               Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
             </p>
-            <a class="slider__link animate" href="">Купить сейчас</a>
+            <button class="btn btn--slider animate" type="button">Купить сейчас</button>
           </div>
         </div>
       </div>
@@ -109,13 +109,13 @@
         <div class="container">
           <div class="slider__content">
             <h3 class="slider__title">
-              НАКРУТИ СЕБЕ ТОМАТОВ
+              накрути себе томатов
               <span class="slider__title slider__title--red">АКЦИЯ: 3 кг по цене 1</span>
             </h3>
             <p class="slider__text">
               Только с 12 по 15 июля скидка на домашние помидорчики
             </p>
-            <a class="slider__link animate" href="">Купить сейчас</a>
+            <button class="slider__btn animate" type="button">Купить сейчас</button>
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@
               позеленеют от зависти
               <span class="slider__title slider__title--red">Распродажа зелени</span>
             </h3>
-            <a class="slider__link animate" href="">Купить сейчас</a>
+            <button class="slider__btn animate" type="button">Купить сейчас</button>
           </div>
         </div>
       </div>
@@ -165,7 +165,7 @@
       </div>
     </div>
 
-    <section class="top">
+    <section class="top-products">
       <div class="container">
         <h2 class="title">
           Топовые товары
@@ -181,7 +181,7 @@
           </li>
 
           <li class="filter__item">
-            <button class="filter__button" type="button" data-filter=".category-2">ОВОЩИ</button>
+            <button class="filter__button" type="button" data-filter=".category-2">овощи</button>
           </li>
 
           <li class="filter__item">
@@ -189,25 +189,26 @@
           </li>
 
           <li class="filter__item">
-            <button class="filter__button" type="button" data-filter=".category-3">БАКАЛЕЯ</button>
+            <button class="filter__button" type="button" data-filter=".category-3">бакалея</button>
           </li>
         </ul>
 
-        <ul class="top__content">
-          <li class="top__item mix category-1">
-            <div class="top__wrap">
+        <ul class="top-products__content">
+          <li class="top-products__item mix category-1">
+            <div class="top-products__wrap">
               <div class="value">
-                <span class="value__decor value__decor--new">новинка</span>
-                <span class="value__decor value__decor--sale">-50%</span>
+                <span class="value__decor" style="background-color: #63a60f">новинка</span>
+                <span class="value__decor" style="background-color: #cf3e3b">-50%</span>
+                <span class="value__decor hide"></span>
               </div>
               <a href="#" class="favorite"></a>
             </div>
-            <img class="top__img" src="images/top/pineapple.png" alt="ананас">
-            <p class="top__name">Ананас, 1кг</p>
+            <img class="top-products__img" src="images/top/pineapple.png" alt="ананас">
+            <p class="top-products__name">Ананас, 1кг</p>
 
-            <div class="top__wrap">
-              <div class="prices">
-                <span class="old-price">1999 ₽</span>
+            <div class="top-products__wrap">
+              <div class="price">
+                <span class="price__old">1999 ₽</span>
                 <span class="price">999 ₽</span>
               </div>
               <a class="cart" href="#"></a>
@@ -215,41 +216,41 @@
 
           </li>
 
-          <li class="top__item mix category-1">
-            <div class="top__wrap">
+          <li class="top-products__item mix category-1">
+            <div class="top-products__wrap">
               <div class="value">
 
               </div>
 
               <a href="#" class="favorite"></a>
             </div>
-            <img class="top__img" src="images/top/lemon.png" alt="лимон">
-            <p class="top__name">Лимон, 1кг</p>
+            <img class="top-products__img" src="images/top/lemon.png" alt="лимон">
+            <p class="top-products__name">Лимон, 1кг</p>
 
-            <div class="top__wrap">
-              <div class="prices">
-                <span class="old-price"></span>
+            <div class="top-products__wrap">
+              <div class="price">
+                <span class="price__old"></span>
                 <span class="price">199 ₽</span>
               </div>
               <a class="cart" href="#"></a>
             </div>
           </li>
 
-          <li class="top__item mix category-2">
-            <div class="top__wrap">
+          <li class="top-products__item mix category-2">
+            <div class="top-products__wrap">
               <div class="value">
-                <span class="value__decor value__decor--hit">хит</span>
-
-
+                <span class="value__decor" style="background-color: #ff7a00">хит</span>
+                <span class="value__decor hide" ></span>
+                <span class="value__decor hide"></span>
               </div>
               <a href="#" class="favorite"></a>
             </div>
 
-            <img class="top__img" src="images/top/pitahaya.png" alt="питахайя">
-            <p class="top__name">Питахайя красная с белой мякотью, 1шт</p>
-            <div class="top__wrap">
-              <div class="prices">
-                <span class="old-price"></span>
+            <img class="top-products__img" src="images/top/pitahaya.png" alt="питахайя">
+            <p class="top-products__name">Питахайя красная с белой мякотью, 1шт</p>
+            <div class="top-products__wrap">
+              <div class="price">
+                <span class="price__old"></span>
                 <span class="price">1019 ₽</span>
               </div>
               <a class="cart" href="#"></a>
@@ -257,105 +258,113 @@
 
           </li>
 
-          <li class="top__item mix category-2">
-            <div class="top__wrap">
+          <li class="top-products__item mix category-2">
+            <div class="top-products__wrap">
               <div class="value">
-                <span class="value__decor value__decor--new">новинка</span>
+                <span class="value__decor" style="background-color: #63a60f">новинка</span>
+                <span class="value__decor hide"></span>
+                <span class="value__decor hide"></span>
               </div>
               <a href="#" class="favorite"></a>
             </div>
 
-            <img class="top__img" src="images/top/peper.png" alt="перец">
-            <p class="top__name">Перец оранжевый, 1кг</p>
+            <img class="top-products__img" src="images/top/peper.png" alt="перец">
+            <p class="top-products__name">Перец оранжевый, 1кг</p>
 
-            <div class="top__wrap">
-              <div class="prices">
-                <span class="old-price"></span>
+            <div class="top-products__wrap">
+              <div class="price">
+                <span class="price__old"></span>
                 <span class="price">349 ₽</span>
               </div>
               <a class="cart" href="#"></a>
             </div>
           </li>
 
-          <li class="top__item mix category-3">
-            <div class="top__wrap">
+          <li class="top-products__item mix category-3">
+            <div class="top-products__wrap">
               <div class="value">
-                <span class="value__decor value__decor--hit">хит</span>
+                <span class="value__decor" style="background-color: #ff7a00">хит</span>
+                <span class="value__decor hide"></span>
+                <span class="value__decor hide"></span>
               </div>
               <a href="#" class="favorite"></a>
             </div>
 
-            <img class="top__img" src="images/top/carrot.png" alt="морковь">
-            <p class="top__name">Морковь молодая с бабушкиной грядки, 1кг</p>
+            <img class="top-products__img" src="images/top/carrot.png" alt="морковь">
+            <p class="top-products__name">Морковь молодая с бабушкиной грядки, 1кг</p>
 
-            <div class="top__wrap">
-              <div class="prices">
-                <span class="old-price"></span>
+            <div class="top-products__wrap">
+              <div class="price">
+                <span class="price__old"></span>
                 <span class="price">49 ₽</span>
               </div>
               <a class="cart" href="#"></a>
             </div>
           </li>
 
-          <li class="top__item mix category-3">
-            <div class="top__wrap">
+          <li class="top-products__item mix category-3">
+            <div class="top-products__wrap">
               <div class="value">
-                <span class="value__decor value__decor--sale">-30%</span>
+                <span class="value__decor" style="background-color: #cf3e3b">-30%</span>
+                <span class="value__decor hide"></span>
+                <span class="value__decor hide"></span>
               </div>
 
               <a href="#" class="favorite"></a>
             </div>
 
-            <img class="top__img" src="images/top/drink.png"
+            <img class="top-products__img" src="images/top/drink.png"
               alt="Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...">
 
-            <p class="top__name">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+            <p class="top-products__name">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
               безалкогольн...
             </p>
 
-            <div class="top__wrap">
-              <div class="prices">
-                <span class="old-price">299 ₽</span>
+            <div class="top-products__wrap">
+              <div class="price">
+                <span class="price__old">299 ₽</span>
                 <span class="price">199 ₽</span>
               </div>
               <a class="cart" href="#"></a>
             </div>
           </li>
 
-          <li class="top__item mix category-3">
-            <div class="top__wrap">
+          <li class="top-products__item mix category-3">
+            <div class="top-products__wrap">
               <div class="value">
-                <span class="value__decor value__decor--new">новинка</span>
+                <span class="value__decor" style="background-color: #63a60f">новинка</span>
+                <span class="value__decor hide"></span>
+                <span class="value__decor hide"></span>
               </div>
               <a href="#" class="favorite"></a>
             </div>
 
-            <img class="top__img" src="images/top/coffe.png" alt="кофе с коноплей">
-            <p class="top__name">Кофе с коноплей органический Caffé Salomoni 250г</p>
+            <img class="top-products__img" src="images/top/coffe.png" alt="кофе с коноплей">
+            <p class="top-products__name">Кофе с коноплей органический Caffé Salomoni 250г</p>
 
-            <div class="top__wrap">
-              <div class="prices">
-                <span class="old-price"></span>
+            <div class="top-products__wrap">
+              <div class="price">
+                <span class="price__old"></span>
                 <span class="price">877 ₽</span>
               </div>
               <a class="cart" href="#"></a>
             </div>
           </li>
 
-          <li class="top__item mix category-4">
-            <div class="top__wrap">
+          <li class="top-products__item mix category-4">
+            <div class="top-products__wrap">
               <div class="value">
 
               </div>
               <a href="#" class="favorite"></a>
             </div>
 
-            <img class="top__img" src="images/top/ketchup.png" alt="кетчуп детский">
-            <p class="top__name">Кетчуп томатный детский органический Bio-Zentrale 500мл</p>
+            <img class="top-products__img" src="images/top/ketchup.png" alt="кетчуп детский">
+            <p class="top-products__name">Кетчуп томатный детский органический Bio-Zentrale 500мл</p>
 
-            <div class="top__wrap">
-              <div class="prices">
-                <span class="old-price"></span>
+            <div class="top-products__wrap">
+              <div class="price">
+                <span class="price__old"></span>
                 <span class="price">600 ₽</span>
               </div>
               <a class="cart" href="#">
@@ -383,7 +392,7 @@
         <div class="footer__form">
           <p class="footer__text">Следите за нашими акциями</p>
           <input class="footer__email" id="e-mail" type="text" placeholder="email@email.com">
-          <button class="footer__button animate" type="submit">ПОДПИСАТЬСЯ</button>
+          <button class="footer__button animate" type="submit">подписаться</button>
         </div>
         <div class="footer__menu">
           <ul class="footer__list">
@@ -454,7 +463,7 @@
     <div class="footer__bottom">
       <div class="container">
         <div class="footer__bottom-wrap">
-           <p class="copy">© 2021 ФРЕШОК</p>
+           <p class="copy">© 2021 фрешок</p>
            <div class="pay">
              <a href="#" class="visa"></a>
              <a href="#" class="master-card"></a>
