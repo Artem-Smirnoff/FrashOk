@@ -341,20 +341,22 @@
   &__content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__item {
     border: 1px solid rgba(17, 17, 17, 0.2);
     border-radius: 6px;
     margin-bottom: 32px;
-    max-width: 300px;
+    max-width: 292px;
     display: flex;
     flex-direction: column;
     padding: 18px 18px 18px;
     min-height: 410px;
     color: $dark-900;
     transition: border 0.4s;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   &__item:hover {
