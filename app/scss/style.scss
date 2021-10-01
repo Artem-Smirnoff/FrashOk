@@ -41,7 +41,7 @@
     color: $white;
     font-family: 'OpenSans', sans-serif;
     font-weight: 700;
-    padding-left: 44px;
+    padding: 10px 5px 10px 44px;
     position: relative;
     transition: opacity 0.4s;
 
@@ -56,7 +56,7 @@
     width: 32px;
     height: 22px;
     left: 0;
-    top: -6px;
+    top: 6px;
     background-repeat: no-repeat;
   }
 
@@ -76,7 +76,7 @@
     background-image: url('../images/icons/icon-tel.svg');
     background-repeat: no-repeat;
     left: 0;
-    top: -6px;
+    top: 6px;
   }
 }
 
@@ -97,6 +97,7 @@
     color: $white;
     font-family: 'OpenSans', sans-serif;
     font-weight: 700;
+    padding: 10px 5px;
     transition: opacity 0.4s;
 
     &:hover {
@@ -306,6 +307,7 @@
 
   &__title {
     font-size: 16px;
+    font-weight: 600;
     color: $dark-900;
     margin-bottom: 6px;
   }
@@ -365,6 +367,7 @@
 
   &__name {
     margin-bottom: auto;
+    font-weight: 600;
   }
 
   &__img {
@@ -431,7 +434,7 @@
   }
 
   &__button {
-    padding: 14px 10px 13px;
+    padding: 14px 10px 12px;
     border: none;
     border-radius: 0 6px 6px 0;
     margin-left: -4px;
