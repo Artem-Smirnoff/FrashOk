@@ -69,16 +69,18 @@
 
           <ul class="user-nav">
             <li class="user-nav__item">
-              <button href="" class="user-nav__btn" style="background-image: url('images/icons/user-link.svg')"></button>
+              <button href="" class="user-nav__btn" style="background-image: url('images/icons/user-link.svg')">
+                <span class="user-nav__num hide"></span>
+              </button>
             </li>
             <li class="user-nav__item">
               <button href="" class="user-nav__btn" style="background-image: url('images/icons/icon-heart.svg')">
-                <span class="user-nav__num">12</span>
+                <span class="user-nav__num text">12</span>
               </button>
             </li>
             <li class="user-nav__item">
               <button href="" class="user-nav__btn" style="background-image: url('images/icons/icon-cart.svg')">
-                <span class="user-nav__num">12</span>
+                <span class="user-nav__num text">12</span>
               </button>
             </li>
           </ul>
@@ -93,11 +95,11 @@
       <div class="slider__item" style="background-image: url('../images/slider/slide-1.jpg')">
         <div class="container">
           <div class="slider__content">
-            <h3 class="slider__title">
+            <h3 class="slider__title text">
               свежачок вам в хату
               <span class="slider__title slider__title--red">Скидка -50%</span>
             </h3>
-            <p class="slider__text">
+            <p class="slider__text text">
               Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
             </p>
             <button class="btn animate" type="button">Купить сейчас</button>
@@ -141,7 +143,7 @@
             <p class="service__title">
               Бесплатная доставка
             </p>
-            <p class="service__text">
+            <p class="service__text text">
               Для заказов на сумму от 500 ₽
             </p>
           </li>
@@ -149,7 +151,7 @@
             <p class="service__title">
               Возврат товара
             </p>
-            <p class="service__text">
+            <p class="service__text text">
               Если товары были испорчены
             </p>
           </li>
@@ -157,7 +159,7 @@
             <p class="service__title">
               Поддержка 24/7
             </p>
-            <p class="service__text">
+            <p class="service__text text">
               Лучшие операторы
             </p>
           </li>
@@ -209,8 +211,11 @@
                 </svg>
               </button>
             </div>
-            <img class="top-products__img" src="images/top/pineapple.png" alt="ананас">
-            <p class="top-products__name">Ананас, 1кг</p>
+
+            <a class="top-products__link" href="#">
+               <img class="top-products__img" src="images/top/pineapple.png" alt="ананас">
+            </a>
+            <p class="top-products__name text">Ананас, 1кг</p>
 
             <div class="top-products__wrap">
               <div class="price">
@@ -236,8 +241,12 @@
                 </svg>
               </button>
             </div>
-            <img class="top-products__img" src="images/top/lemon.png" alt="лимон">
-            <p class="top-products__name">Лимон, 1кг</p>
+
+            <a class="top-products__link" href="#">
+              <img class="top-products__img" src="images/top/lemon.png" alt="лимон">
+            </a>
+            
+            <p class="top-products__name text">Лимон, 1кг</p>
 
             <div class="top-products__wrap">
               <div class="price">
@@ -264,8 +273,11 @@
               </button>
             </div>
 
-            <img class="top-products__img" src="images/top/pitahaya.png" alt="питахайя">
-            <p class="top-products__name">Питахайя красная с белой мякотью, 1шт</p>
+            <a class="top-products__link" href="#">
+              <img class="top-products__img" src="images/top/pitahaya.png" alt="питахайя">
+            </a>
+            
+            <p class="top-products__name text">Питахайя красная с белой мякотью, 1шт</p>
             <div class="top-products__wrap">
               <div class="price">
                 <span class="price__old"></span>
@@ -292,8 +304,11 @@
              </button>
             </div>
 
-            <img class="top-products__img" src="images/top/peper.png" alt="перец">
-            <p class="top-products__name">Перец оранжевый, 1кг</p>
+            <a class="top-products__link" href="#">
+              <img class="top-products__img" src="images/top/peper.png" alt="перец">
+            </a>
+            
+            <p class="top-products__name text">Перец оранжевый, 1кг</p>
 
             <div class="top-products__wrap">
               <div class="price">
@@ -320,8 +335,11 @@
               </button>
             </div>
 
-            <img class="top-products__img" src="images/top/carrot.png" alt="морковь">
-            <p class="top-products__name">Морковь молодая с бабушкиной грядки, 1кг</p>
+            <a class="top-products__link" href="#">
+              <img class="top-products__img" src="images/top/carrot.png" alt="морковь">
+            </a>
+            
+            <p class="top-products__name text">Морковь молодая с бабушкиной грядки, 1кг</p>
 
             <div class="top-products__wrap">
               <div class="price">
@@ -349,10 +367,13 @@
               </button>
             </div>
 
-            <img class="top-products__img" src="images/top/drink.png"
-              alt="Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...">
+            <a class="top-products__link" href="#">
+              <img class="top-products__img" src="images/top/drink.png"
+                alt="Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...">
+            </a>
+            
 
-            <p class="top-products__name">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+            <p class="top-products__name text">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
               безалкогольн...
             </p>
 
@@ -381,8 +402,11 @@
               </button>
             </div>
 
-            <img class="top-products__img" src="images/top/coffe.png" alt="кофе с коноплей">
-            <p class="top-products__name">Кофе с коноплей органический Caffé Salomoni 250г</p>
+            <a class="top-products__link" href="#">
+              <img class="top-products__img" src="images/top/coffe.png" alt="кофе с коноплей">
+            </a>
+            
+            <p class="top-products__name text">Кофе с коноплей органический Caffé Salomoni 250г</p>
 
             <div class="top-products__wrap">
               <div class="price">
@@ -407,8 +431,11 @@
               </button>
             </div>
 
-            <img class="top-products__img" src="images/top/ketchup.png" alt="кетчуп детский">
-            <p class="top-products__name">Кетчуп томатный детский органический Bio-Zentrale 500мл</p>
+            <a class="top-products__link" href="#">
+              <img class="top-products__img" src="images/top/ketchup.png" alt="кетчуп детский">
+            </a>
+            
+            <p class="top-products__name text">Кетчуп томатный детский органический Bio-Zentrale 500мл</p>
 
             <div class="top-products__wrap">
               <div class="price">

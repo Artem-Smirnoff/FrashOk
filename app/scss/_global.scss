@@ -23,6 +23,18 @@ body {
   object-fit: cover;
 }
 
+.text {
+  margin: 0;
+  /* Убираем внешний отступ */
+  -webkit-line-clamp: 2;
+  /* Число отображаемых строк */
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
+  overflow: hidden;
+}
+
 .animate {
   transition: box-shadow 0.4s,
     background-color 0.4s,
@@ -131,8 +143,8 @@ body {
 }
 
 .cart {
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   padding: 8px;
   background-color: $green-900;
   background-image: url('../images/icons/icon-cart-small.svg');
@@ -178,6 +190,7 @@ body {
   font-size: 10px;
   color: $white;
   text-transform: uppercase;
+  min-height: 50px;
 
   &__decor {
     border-radius: 6px;

@@ -334,6 +334,11 @@
     font-family: 'OpenSans', sans-serif;
     font-weight: 700;
     font-size: 15px;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom 0.4s;
+    &:hover {
+       border-bottom: 3px solid $green-200;
+    }
   }
 }
 
@@ -353,7 +358,7 @@
     max-width: 292px;
     display: flex;
     flex-direction: column;
-    padding: 18px 18px 18px;
+    
     min-height: 410px;
     color: $dark-900;
     transition: border 0.4s;
@@ -368,18 +373,59 @@
   &__name {
     margin-bottom: auto;
     font-weight: 600;
+    -webkit-line-clamp: 5;
+    padding: 18px 18px 0 18px;
   }
 
   &__img {
     margin-bottom: auto;
     width: 298px;
-    height: 215px;
+    height: 198px;
+  }
+
+  &__link {
+    position: relative;
+    
+    &:hover {
+      &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      border-radius: 50px;
+      background-color: $white;
+      background-image: url(../images/icons/search.svg);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: center;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
   }
 
   &__wrap {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 18px 18px 18px;
   }
 }
 
