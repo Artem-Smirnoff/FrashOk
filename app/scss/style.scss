@@ -367,14 +367,13 @@
     justify-content: center;
   }
 
-  &__item {
+  &__card {
     border: 1px solid rgba(17, 17, 17, 0.2);
     border-radius: 6px;
     margin-bottom: 32px;
     max-width: 292px;
     display: flex;
     flex-direction: column;
-    
     min-height: 410px;
     color: $dark-900;
     transition: border 0.4s;
@@ -382,7 +381,7 @@
     margin-left: 15px;
   }
 
-  &__item:hover {
+  &__card:hover {
     border: 1px solid $green-900;
   }
 
@@ -406,8 +405,10 @@
   &__name {
     margin-bottom: auto;
     font-weight: 600;
+    font-size: 14px;
     -webkit-line-clamp: 5;
     padding: 18px 18px 0 18px;
+    min-height: 100px;
   }
 
   &__img {
@@ -417,6 +418,7 @@
   }
 
   &__link {
+    width: 100%;
     position: relative;
     
     &:hover {
@@ -560,6 +562,12 @@
   font-style: normal;
 
   &__phone {
+    display: block;
+    color: $white;
+    margin-bottom: 18px;
+  }
+
+  &__text {
     display: block;
     color: $white;
     margin-bottom: 18px;
