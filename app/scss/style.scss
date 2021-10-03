@@ -549,12 +549,9 @@
     text-transform: uppercase;
   }
 
-  &__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 467px;
-    width: 100%;
+  &__list {
+    column-count: 3;
+    column-gap: 75px;
   }
 
   &__item-link {
