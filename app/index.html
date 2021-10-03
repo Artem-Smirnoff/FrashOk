@@ -525,9 +525,14 @@
       </a>
       <div class="footer__inner">
         <div class="footer__form">
-          <p class="footer__text">Следите за нашими акциями</p>
-          <input class="footer__email" id="e-mail" type="text" placeholder="email@email.com">
-          <button class="footer__button animate" type="submit">подписаться</button>
+          <div class="footer__text">
+            <p>Следите за нашими акциями</p>
+          </div>
+          <form class="footer__form" action="#">
+            <input class="footer__email" type="text" placeholder="email@email.com" required>
+            <button class="footer__button animate" type="submit">подписаться</button>
+          </form>
+          
         </div>
         <div class="footer__menu">
           <ul class="footer__list">
@@ -570,8 +575,11 @@
         </div>
         <address class="address">
           <a class="address__phone" href="tel:+7907288365">Горячая линия
-            +7 907 288 365</a>
-          <a class="address__text" href="#">Санкт-Петербург, ул. Ленина, 1</a>
+            +7 907 288 365
+          </a>
+          <a class="address__phone" href="#">
+            Санкт-Петербург, ул. Ленина, 1
+          </a>
 
           <ul class="social">
             <li class="social__item">
@@ -598,10 +606,10 @@
     <div class="footer__bottom">
       <div class="container">
         <div class="footer__bottom-wrap">
-           <p class="copy">© 2021 фрешок</p>
-           <div class="pay">
-             <img class="visa" src="images/icons/visa.svg" alt="visa">
-             <img class="master-card" src="images/icons/mc.svg" alt="master card">
+           <p class="footer__copy">© 2021 фрешок</p>
+           <div class="footer__pay">
+             <img class="footer__pay-visa" src="images/icons/visa.svg" alt="visa">
+             <img class="footer__pay-master-card" src="images/icons/mc.svg" alt="master card">
            </div>
         </div>
       </div>
