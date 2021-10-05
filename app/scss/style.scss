@@ -423,7 +423,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    -webkit-line-clamp: 2;
+    // -webkit-line-clamp: 2;
     height: 60px;
     padding: 18px 18px 0 18px;
 
@@ -503,6 +503,61 @@
     }
   }
 
+}
+
+.offers {
+  padding-bottom: 72px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba($black, 0.25);
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(auto, 630px) minmax(auto, 300px) minmax(auto, 300px);
+    grid-column-gap: 30px;
+  }
+
+  &__item {
+    padding: 76px 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    border-radius: 6px;
+
+    &--white {
+      color: $white;
+    }
+  }
+
+  &__sub-title {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    line-clamp: 2;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    max-width: 346px;
+    font-family: 'Ruda';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.4;
+    text-overflow: hidden;
+    &-block {
+      display: block;
+    }
+  }
+
+  &__link {
+    color: $dark-500;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $dark-500;
+    
+     &--white {
+       color: $white;
+       border-color: $white;
+     }
+  }
 }
 
 
