@@ -166,7 +166,7 @@ body {
   height: 44px;
   padding: 8px;
   background-color: $green-900;
-  background-image: url('../images/icons/icon-cart-small.svg');
+  background-image: url('../sprite.svg#icon-cart-small');
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 3px;
@@ -198,6 +198,11 @@ body {
     width: 44px;
     height: 44px;
     padding-right: 10px;
+    fill:#c1c1c1;
+    transition: fill 0.4s;
+    &:hover {
+      fill: #ffb800;
+    }
   }
  
 }
@@ -222,15 +227,15 @@ body {
   }
 
   &__link--facebook {
-    background-image: url('../images/icons/facebook.svg');
+    background-image: url('../sprite.svg#facebook');
   }
 
   &__link--youtube {
-    background-image: url('../images/icons/youtube.svg');
+    background-image: url('../sprite.svg#youtube');
   }
 
   &__link--telegram {
-    background-image: url('../images/icons/telegram.svg');
+    background-image: url('../sprite.svg#telegram');
   }
 
   &__link--instagram {

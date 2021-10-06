@@ -311,17 +311,21 @@
     margin-right: 65px;
     padding-left: 74px;
     background-repeat: no-repeat;
+    background-position: -72px 0;
+    background-size: contain;
+    
 
     &--scooter {
-      background-image: url('../images/icons/scooter1.svg');
+      background-image: url('../sprite.svg#scooter1');
+      
     }
 
     &--return {
-      background-image: url('../images/icons/return-box1.svg');
+      background-image: url('../sprite.svg#return-box1');
     }
 
     &--24-hours {
-      background-image: url('../images/icons/24-hours-1.svg');
+      background-image: url('../sprite.svg#24-hours-1');
     }
   }
 
@@ -592,7 +596,7 @@
   }
 
   &__button {
-    padding: 14px 10px 12px;
+    padding: 14px 10px 13px;
     border: none;
     border-radius: 0 6px 6px 0;
     margin-left: -4px;
