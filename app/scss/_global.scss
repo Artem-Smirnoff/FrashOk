@@ -194,13 +194,12 @@ body {
   transition: background-image 0.4s;
   width: 32px;
   height: 30px;
-  & path {
-    transition: fill 0.4s;
+  &__icon {
+    width: 44px;
+    height: 44px;
+    padding-right: 10px;
   }
-  
-  &:hover path {
-    fill:#ffb800;
-  }
+ 
 }
 
 .social {
@@ -238,4 +237,3 @@ body {
     background-image: url('../images/icons/instagram.svg');
   }
 }
-
