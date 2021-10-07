@@ -4,5 +4,7 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next"><img src="images/slider/icon-arrow-right.svg" alt="стрелка вправо"></button>'
   });
 
+ 
   var mixer = mixitup('.top-products__content');
+  var mixer = mixitup('.actions__list');
 })
