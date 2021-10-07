@@ -507,6 +507,42 @@
     }
   }
 
+  &__counter {
+    width: 84px;
+    display: flex;
+    margin-top: 10px;
+  }
+
+  &__count {
+    width: 36px;
+    height: 24px;
+    border: none;
+    background-color: rgba(99, 166, 14, 0.1);
+    text-align: center;
+  }
+
+  &__count-btn {
+    display: inline-block;
+    border: none;
+    height: 24px;
+    width: 24px;
+    background-color: $green-900;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+
+    &--minus {
+      border-radius: 3px 0 0 3px;
+      background-image: url('../sprite.svg#minus');
+    }
+
+    &--plus {
+      border-radius: 0 3px 3px 0;
+      background-image: url('../sprite.svg#plus');
+      background-size: 50px;
+    }
+  }
+
 }
 
 .offers {
@@ -585,9 +621,10 @@
     border-radius: 6px;
     border: 1px solid rgba(17, 17, 17, 0.2);
     transition: border 0.4s;
+
     &:hover {
       border: 1px solid $green-900;
-    } 
+    }
   }
 
   &__wrapper {
