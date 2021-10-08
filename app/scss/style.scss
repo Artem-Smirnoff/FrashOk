@@ -607,10 +607,9 @@
   padding: 75px 0;
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-column-gap: 30px;
   }
 
   &__item {
@@ -700,6 +699,24 @@
   &__btn {
     margin-left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+.drinks {
+  padding: 81px 0 72px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__img {
+    width: 81px;
+    opacity: 0.5;
+    transition: opacity 0.4s;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
