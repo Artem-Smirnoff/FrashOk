@@ -703,20 +703,118 @@
 }
 
 .drinks {
-  padding: 81px 0 72px 0;
+  padding: 81px 0 45px 0;
 
   &__inner {
     display: flex;
     justify-content: space-around;
   }
 
-  &__img {
-    width: 81px;
+  &__link {
+    display: block;
+    background-size: 100px;
+    background-position: top center;
+    background-repeat: no-repeat;
     opacity: 0.5;
+    width: 100px;
+    height: 76px;
     transition: opacity 0.4s;
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+.news {
+  padding-bottom: 72px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    padding-bottom: 6px;
+    border-bottom: 2px solid $green-900;
+    color: $green-900;
+    transition: color 0.4s;
+    &:hover,
+    &:active {
+      color: #4d800c;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(300px, 410px) minmax(300px, 410px) minmax(300px, 410px);
+    grid-column-gap: 30px;
+  }
+
+  &__item {
+    max-width: 410px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+  }
+
+  &__img {
+    max-width: 410px;
+    min-height: 240px;
+    background-image: url('../images/news/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  &__date {
+    position: absolute;
+    left: 20px;
+    width: 65px;
+    height: 76px;
+    background-color: $white;
+    border-radius: 0 0 4px 4px;
+    padding-top: 18px;
+
+    & span {
+      display: block;
+      text-align: center;
+      color: $dark-900;
+      text-transform: uppercase;
+    }
+  }
+
+  &__month {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    margin-bottom: 4px;
+  }
+
+  &__num {
+    font-family: Ruda;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $dark-900;
+    padding: 18px;
   }
 }
 
