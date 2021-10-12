@@ -1,7 +1,7 @@
 $(function () {
   $('.slider-hero__items').slick({
-    prevArrow: '<button type="button" class="slick-prev"><img src="images/slider/icon-arrow-left.svg" alt="стрелка влево"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/slider/icon-arrow-right.svg" alt="стрелка вправо"></button>'
+    prevArrow: '<button type="button" class="slick-prev"><svg class="slick-next__icon"><use xlink href="sprite.svg#icon-arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="slick-next__icon"><use xlink href="sprite.svg#icon-arrow-right"></use></svg></button>'
   });
 
   var containerEl1 = document.querySelector('[data-ref="container-1"]');
