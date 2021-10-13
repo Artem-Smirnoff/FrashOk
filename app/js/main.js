@@ -4,6 +4,12 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next"><svg class="slick-next__icon"><use xlink href="sprite.svg#icon-arrow-right"></use></svg></button>'
   });
 
+  $('.brends__inner').slick({
+    arrows: false,
+    slidesToShow: 6,
+    slidesToScroll: 3
+  })
+
   var containerEl1 = document.querySelector('[data-ref="container-1"]');
   var containerEl2 = document.querySelector('[data-ref="container-2"]');
 

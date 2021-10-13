@@ -53,14 +53,6 @@ body {
   object-fit: cover;
 }
 
-.text {
-  margin: 0;
-  -webkit-line-clamp: 2;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
 .animate {
   transition: box-shadow 0.4s,
     background-color 0.4s,
@@ -147,7 +139,13 @@ body {
   top: 47%;
   transform: translateY(-50%);
   transition: background-color 0.4s;
-  &:hover {
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(99, 166, 14, 0.5);
+  }
+
+  &:hover,
+  &:active {
     background-color: #e0edcf;
     .slick-next__icon,
     .slick-prev__icon {

@@ -12,3 +12,10 @@ $green-200: #e0edcf;
 $green-900: #63a60f;
 $black: #000000;
 
+@mixin text {
+   margin: 0;
+   -webkit-line-clamp: 2;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
