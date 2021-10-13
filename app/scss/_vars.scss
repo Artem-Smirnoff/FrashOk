@@ -12,6 +12,27 @@ $green-200: #e0edcf;
 $green-900: #63a60f;
 $black: #000000;
 
+
+$xl: 1440px;
+$lg: 1200px;
+$md: 992px;
+$sm: 768px;
+$xs: 480px;
+
+@mixin max-w($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin min-w($width) {
+  @media (min-width: calc($width + 1px)) {
+    @content;
+  }
+}
+
+
+
 @mixin text {
    margin: 0;
    -webkit-line-clamp: 2;
