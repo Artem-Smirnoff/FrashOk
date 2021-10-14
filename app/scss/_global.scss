@@ -26,6 +26,45 @@ body {
   padding: 0 15px;
 }
 
+.menu__btn {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  display: none;
+   @include max-w ($md) {
+     display: block;
+   }
+
+  &-line {
+    position: absolute;
+    width: 44px;
+    height: 2px;
+    background-color: $white;
+    left: 0;
+
+    &::after,
+    &::before {
+      content: "";
+      width: 44px;
+      height: 2px;
+      background-color: $white;
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      bottom: 10px;
+    }
+
+    &::after {
+      top: 10px;
+    }
+
+  }
+}
+
 .hide {
   display: none;
 }
@@ -51,6 +90,10 @@ body {
   width: 200px;
   height: 60px;
   object-fit: cover;
+  @include max-w ($md) {
+    width: 60px;
+    content: url('../sprite.svg#logo-short');
+  }
 }
 
 .animate {
@@ -126,6 +169,41 @@ body {
   }
 }
 
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  margin-top: -32px;
+  
+ 
+  & li {
+    margin-right: 12px;
+    z-index: 6;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  & button {
+    font-size: 0;
+    width: 10px;
+    height: 14px;
+    border-radius: 25px;
+    background-color: $white;
+    border: 1px solid $silver-600;
+  }
+   @include max-w ($md) {
+    opacity: 1;
+   }
+
+  & li.slick-active button {
+    background-color: $green-900;
+    border: 1px solid $green-900;
+  }
+}
+
+
+
 .slick-arrow {
   width: 60px;
   height: 60px;
@@ -139,6 +217,10 @@ body {
   top: 47%;
   transform: translateY(-50%);
   transition: background-color 0.4s;
+
+  @include max-w ($md) {
+    opacity: 0;
+  }
 
   &:focus {
     box-shadow: 0 0 0 3px rgba(99, 166, 14, 0.5);
