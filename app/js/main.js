@@ -2,13 +2,30 @@ $(function () {
   $('.slider-hero__items').slick({
     prevArrow: '<button type="button" class="slick-prev"><svg class="slick-next__icon"><use xlink href="sprite.svg#icon-arrow-left"></use></svg></button>',
     nextArrow: '<button type="button" class="slick-next"><svg class="slick-next__icon"><use xlink href="sprite.svg#icon-arrow-right"></use></svg></button>',
-    dots: true   
+    dots: true
   });
 
   $('.brends__inner').slick({
     arrows: false,
     slidesToShow: 6,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    responsive: [{
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+
+    ]
   })
 
   var containerEl1 = document.querySelector('[data-ref="container-1"]');

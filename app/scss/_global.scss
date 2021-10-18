@@ -33,9 +33,10 @@ body {
   border: none;
   position: relative;
   display: none;
-   @include max-w ($md) {
-     display: block;
-   }
+
+  @include max-w ($md) {
+    display: block;
+  }
 
   &-line {
     position: absolute;
@@ -90,6 +91,7 @@ body {
   width: 200px;
   height: 60px;
   object-fit: cover;
+
   @include max-w ($md) {
     width: 60px;
     content: url('../sprite.svg#logo-short');
@@ -149,6 +151,11 @@ body {
     margin-left: 50%;
     margin-top: 2px;
 
+    @include max-w ($xs) {
+      transform: translateX(-43%);
+      margin-left: 43%;
+    }
+
     &:focus {
       box-shadow: 0 0 0 4px #e0edcf;
       color: $green-900;
@@ -174,11 +181,12 @@ body {
   justify-content: center;
   opacity: 0;
   margin-top: -32px;
-  
- 
+
+
   & li {
     margin-right: 12px;
     z-index: 6;
+
     &:last-child {
       margin-right: 0;
     }
@@ -192,9 +200,10 @@ body {
     background-color: $white;
     border: 1px solid $silver-600;
   }
-   @include max-w ($md) {
+
+  @include max-w ($md) {
     opacity: 1;
-   }
+  }
 
   & li.slick-active button {
     background-color: $green-900;
@@ -229,15 +238,17 @@ body {
   &:hover,
   &:active {
     background-color: #e0edcf;
+
     .slick-next__icon,
     .slick-prev__icon {
       fill: $green-900;
-    } 
+    }
   }
 }
 
 .slick-next {
   right: 51px;
+
   &__icon {
     width: 18px;
     height: 32px;
@@ -249,12 +260,13 @@ body {
 .slick-prev {
   left: 55px;
   z-index: 2;
-   &__icon {
-     width: 18px;
-     height: 32px;
-     fill:#505050;
-     transition: fill 0.4s;
-   }
+
+  &__icon {
+    width: 18px;
+    height: 32px;
+    fill: #505050;
+    transition: fill 0.4s;
+  }
 }
 
 .title {
@@ -307,23 +319,28 @@ body {
   transition: background-image 0.4s;
   width: 32px;
   height: 30px;
+
   &__icon {
     width: 44px;
     height: 44px;
     padding-right: 10px;
-    fill:#c1c1c1;
+    fill: #c1c1c1;
     transition: fill 0.4s;
+
     &:hover {
       fill: #ffb800;
     }
   }
- 
+
 }
 
 .social {
   max-width: 230px;
   display: flex;
   justify-content: space-between;
+  @include max-w ($lg) {
+    margin: 0 auto;
+  }
 
   &__link {
     display: block;
