@@ -247,6 +247,12 @@
 
   &__item {
     margin-right: 26px;
+    &-hide {
+      display: none;
+      @include max-w($md) {
+        display: block;
+      }
+    }
 
     &:last-child {
       margin-right: 0;
@@ -271,7 +277,6 @@
     }
 
     &--search {
-      display: none;
       background-image: url(../images/icons/icon-search2.svg);
 
       @include max-w ($md) {
