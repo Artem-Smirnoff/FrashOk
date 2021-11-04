@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="menu">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__wrapper header__wrapper--top">
+
+            <ul class="contact">
+              <li class="contact__item">
+                <a class="contact__link contact__link--delivery" href="#">
+                  адрес и время доставки
+                </a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__link contact__link--phone" href="#">
+                  горячая линия 24/7
+                </a>
+              </li>
+            </ul>
+            <button class="menu__btn" type="button">
+              <span class="menu__btn-line"></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  доставка
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  О нас
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">
+                  новости
+                </a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="header__inner">
+        <div class="container">
+          <div class="header__wrapper">
+            <a href="#" class="logo">
+              <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
+            </a>
+
+            <button class="products" type="button">
+              Каталог продуктов
+            </button>
+
+            <form class="search" action="#">
+              <input class="search__field" type="text" placeholder="Найти в магазине ..." required>
+              <button class="search__btn" type="submit">поиск</button>
+            </form>
+
+            <ul class="user-nav">
+              <li class="user-nav__item">
+                <button class="user-nav__btn user-nav__btn--user-link" type="button">
+                  <span class="user-nav__num" style="background-color: transparent;"></span>
+                  <span class="sr-only">профиль</span>
+                </button>
+              </li>
+              <li class="user-nav__item">
+                <button class="user-nav__btn user-nav__btn--heart" type="button">
+                  <span class="user-nav__num">12</span>
+                  <span class="sr-only">избранное</span>
+                </button>
+              </li>
+
+              <li class="user-nav__item user-nav__item-hide">
+                <button class="user-nav__btn user-nav__btn--search" type="button">
+                  <span class="user-nav__num" style="background-color: transparent;"></span>
+                  <span class="sr-only">поиск</span>
+                </button>
+              </li>
+
+              <li class="user-nav__item">
+                <button class="user-nav__btn user-nav__btn--cart" type="button">
+                  <span class="user-nav__num">12</span>
+                  <span class="sr-only">корзина</span>
+                </button>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+        </li>
+      </ul>
+    </div>
+
+    <section class="catalog">
+      <div class="container">
+        <h2 class="title catalog__title">Каталог товаров</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="logo footer__logo" href="#">
+        <img src="images/icons/logo.svg" alt="логотип" class="logo__img">
+      </a>
+      <div class="footer__inner">
+        <div class="footer__form">
+          <div class="footer__text">
+            <p>Следите за нашими акциями</p>
+          </div>
+          <form class="footer__form" action="#">
+            <input class="footer__email" type="text" placeholder="email@email.com" required>
+            <button class="footer__button animate" type="submit">подписаться</button>
+          </form>
+
+        </div>
+        <nav class="menu footer__menu">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__item-link" href="">О нас</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__item-link" href="">Контакты</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__item-link" href="">Публичная оферта</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__item-link" href="">Оплата и доставка</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__item-link" href="">Вакансии</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__item-link" href="">Акции</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__item-link" href="">Отзывы</a>
+            </li>
+
+            <li class="footer__item">
+              <a class="footer__item-link" href="">Новости</a>
+            </li>
+          </ul>
+        </nav>
+
+        <address class="address">
+          <a class="address__phone" href="tel:+7907288365">Горячая линия
+            +7 907 288 365
+          </a>
+          <a class="address__phone" href="#">
+            Санкт-Петербург, ул. Ленина, 1
+          </a>
+
+          <ul class="social">
+            <li class="social__item">
+              <a href="" class="social__link social__link--facebook"></a>
+            </li>
+
+            <li class="social__item">
+              <a href="" class="social__link social__link--youtube"></a>
+            </li>
+
+            <li class="social__item">
+              <a href="" class="social__link social__link--telegram"></a>
+            </li>
+
+            <li class="social__item">
+              <a href="" class="social__link social__link--instagram"></a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="footer__bottom-wrap">
+          <p class="footer__copy">© 2021 фрешок</p>
+          <div class="footer__pay">
+            <img class="footer__pay-visa" src="images/icons/visa.svg" alt="visa">
+            <img class="footer__pay-master-card" src="images/icons/mc.svg" alt="master card">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
