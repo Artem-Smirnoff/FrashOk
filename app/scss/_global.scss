@@ -5,18 +5,26 @@ body {
   line-height: 1.3;
   color: #505050;
   background-color: $white;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .main {
- flex-grow: 1;
+ flex: 1 1 auto;
 }
 
 .breadcrumbs {
-  padding: 24px 0;
-  display: flex;
   background-color: $silver-100;
+
+  &__list {
+     display: flex;
+     padding: 24px 0;
+  }
 
   &__item {
     position: relative;
@@ -413,3 +421,20 @@ body {
     background-image: url('../images/icons/instagram.svg');
   }
 }
+
+ .star {
+   padding-right: 18px;
+   font-weight: bold;
+   font-size: 14px;
+   background-image: url('../sprite.svg#star');
+   background-repeat: no-repeat;
+   background-position: 8px center;
+ }
+
+ .status {
+   text-transform: uppercase;
+   font-weight: 600;
+   font-size: 10px;
+   line-height: 1;
+   letter-spacing: 0.03em;
+ }

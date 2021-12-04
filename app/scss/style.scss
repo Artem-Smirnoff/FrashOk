@@ -247,8 +247,10 @@
 
   &__item {
     margin-right: 26px;
+
     &-hide {
       display: none;
+
       @include max-w($md) {
         display: block;
       }
@@ -470,7 +472,7 @@
 .top-products {
   padding: 72px 0;
   letter-spacing: 0.03em;
-
+ 
   @include max-w ($sm) {
     padding: 50px 0;
   }
@@ -510,6 +512,13 @@
     }
   }
 
+  &__status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px;
+  } 
+
   &__name {
     @include text;
     margin-bottom: auto;
@@ -517,10 +526,10 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
-    margin-bottom: 68px;
+    margin-bottom: 50px;
     -webkit-line-clamp: 3;
-    height: 74px;
-    padding: 10px 18px 0 10px;
+    max-height: 74px;
+    padding: 10px 18px 0 17px;
 
     @include max-w ($sm) {
       margin-bottom: 17px;
@@ -587,7 +596,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 18px 18px 11px;
+    padding: 10px 18px 9px;
+    &:last-child {
+      padding-top: 0;
+    }
 
     @include max-w ($sm) {
       padding: 8px 12px 11px;
@@ -787,13 +799,6 @@
     color: $dark-900;
   }
 
-  &__status {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 10px;
-    line-height: 1;
-    letter-spacing: 0.03em;
-  }
 
   &__bages {
     position: absolute;
@@ -826,14 +831,7 @@
     margin-right: 7px;
   }
 
-  &__star {
-    padding-right: 18px;
-    font-weight: bold;
-    font-size: 14px;
-    background-image: url('../sprite.svg#star');
-    background-repeat: no-repeat;
-    background-position: 8px center;
-  }
+ 
 
   &__btn {
     margin-left: 50%;
@@ -999,8 +997,226 @@
   }
 }
 
-.catalog {
+.shop {
   padding: 48px 0;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__title {
+    font-size: 42px;
+    font-family: 'Ruda';
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $dark-900;
+    margin-bottom: 57px;
+  }
+}
+
+
+
+.filter {
+  max-width: 300px;
+  width: 100%;
+  margin-right: 30px;
+
+  &__item {
+    border: 1px solid $silver-600;
+    border-radius: 6px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    padding: 18px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-family: 'Ruda', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid $silver-600;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 11px;
+      background-image: url('../images/icons/catalog-arrow.svg');
+      right: 24px;
+      top: 28px;
+    }
+  }
+
+  &__form {
+    padding: 18px;
+  }
+
+  &__input {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+
+    &:checked+.filter-offer__checkbox {
+      border: 1px solid $dark-500;
+      background-image: url('../images/icons/cheked.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__checkbox {
+    display: block;
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    background-color: $silver-100;
+    border: 1px solid $silver-600;
+    border-radius: 3px;
+  }
+
+  &__label {
+    display: flex;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $dark-500;
+  }
+}
+
+.filter-categories {
+  &__list {
+    height: 300px;
+    padding: 18px;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      position: absolute;
+      width: 2px;
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $silver-600;
+      border-radius: 1px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+  &__link {
+    font-size: 18px;
+    color: $dark-500;
+  }
+}
+
+.filter-price {
+  &__price {
+    display: flex;
+    align-items: center;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+  }
+
+  &__text {
+    font-family: 'Ruda';
+    font-weight: 400;
+    font-size: 16px;
+    color: $silver-600;
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__to,
+  &__from {
+    width: 80px;
+    height: 40px;
+    display: block;
+    margin-right: 8px;
+    background-color: #f6f6f6;
+    border: 1px solid #c1c1c1;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  &__text {
+    margin-right: 8px;
+  }
+
+}
+
+
+.irs--flat .irs-bar {
+  top: 25px;
+  height: 2px;
+  background-color: $green-900;
+}
+
+.irs--flat .irs-line {
+  top: 25px;
+  height: 2px;
+  background-color: #e1e4e9;
+  border-radius: 4px;
+}
+
+.irs--flat .irs-handle {
+  top: 17px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: $green-900;
+}
+
+.irs--flat .irs-handle.state_hover>i:first-child,
+.irs--flat .irs-handle:hover>i:first-child {
+  background-color: transparent;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single  {
+  display: none;
+}
+
+.irs--flat .irs-handle>i:first-child {
+  background-color: $green-900;
+
+  &:hover {
+    background-color: $green-900;
+  }
 }
 
 .footer {
@@ -1044,6 +1260,7 @@
     padding: 12px;
     border: none;
     max-width: 184px;
+
     @include max-w ($lg) {
       max-width: 169px;
     }
@@ -1063,7 +1280,7 @@
   }
 
   &__menu {
-    @include max-w ($lg){
+    @include max-w ($lg) {
       order: 3;
       padding-bottom: 24px;
       border-bottom: 1px solid rgba($white, 0.1);
@@ -1088,6 +1305,7 @@
     display: inline-block;
     color: $white;
     padding: 12px 10px;
+
     @include max-w ($lg) {
       padding: 12px 0;
       width: 144px;
@@ -1104,6 +1322,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     @include max-w ($xs) {
       flex-direction: column;
       justify-content: center;
@@ -1111,15 +1330,15 @@
   }
 
   &__copy {
-      @include max-w ($xs) {
-        order: 1;
-        margin-top: 24px;
-      }
+    @include max-w ($xs) {
+      order: 1;
+      margin-top: 24px;
+    }
   }
 
   &__pay {
     display: flex;
-  
+
   }
 
   &__pay-visa {
@@ -1137,6 +1356,7 @@
 .address {
   padding-top: 26px;
   font-style: normal;
+
   @include max-w ($lg) {
     margin: 0 auto;
     padding-bottom: 24px;
