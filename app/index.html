@@ -32,6 +32,86 @@
             <button class="menu__btn" type="button">
               <span class="menu__btn-line"></span>
             </button>
+
+            <div class="menu-hide">
+              <div class="menu-hide__top">
+                <a href="#" class="logo">
+                  <img class="logo" src="images/icons/logo-green.svg" alt="логотип">
+                </a>
+                <button class="menu__btn menu__btn--close" type="button">
+                  <span class="menu__btn-line menu__btn-line--close"></span>
+                </button>
+              </div>
+              <div class="menu-hide__register">
+                <a class="menu-hide__link menu-hide__link--user" href="#">Вход</a> |
+                <a class="menu-hide__link" href="#">Регистрация</a>
+              </div>
+              <button class="menu-hide__products" type="button">
+                Каталог товаров
+              </button>
+              <address class="menu-hide__address">
+                <a class="address__phone address__phone--phone" href="tel:+7907288365">
+                  +7 907 288 365
+                </a>
+                <a class="address__phone address__phone--location" href="#">
+                  Санкт-Петербург, ул. Ленина, 1
+                </a>
+
+                <ul class="social">
+                  <li class="social__item">
+                    <a href="" class="social__link social__link--facebook"></a>
+                  </li>
+
+                  <li class="social__item">
+                    <a href="" class="social__link social__link--youtube"></a>
+                  </li>
+
+                  <li class="social__item">
+                    <a href="" class="social__link social__link--telegram"></a>
+                  </li>
+
+                  <li class="social__item">
+                    <a href="" class="social__link social__link--instagram"></a>
+                  </li>
+                </ul>
+              </address>
+
+              <ul class="menu-hide__list">
+                <li class="menu-hide__item">
+                  <a class="menu-hide__item-link" href="">Доставка</a>
+                </li>
+
+                <li class="menu-hide__item">
+                  <a class="menu-hide__item-link" href="">О нас</a>
+                </li>
+
+                <li class="menu-hide__item">
+                  <a class="menu-hide__item-link" href="">Новости</a>
+                </li>
+
+                <li class="menu-hide__item">
+                  <a class="menu-hide__item-link" href="">Контакты</a>
+                </li>
+
+                <li class="menu-hide__item">
+                  <a class="menu-hide__item-link" href="">Акции</a>
+                </li>
+
+                <li class="menu-hide__item">
+                  <a class="menu-hide__item-link" href="">Вакансии</a>
+                </li>
+
+                <li class="menu-hide__item">
+                  <a class="menu-hide__item-link" href="">Отзывы</a>
+                </li>
+
+                <li class="menu-hide__item">
+                  <a class="menu-hide__item-link" href="">Публичная оферта</a>
+                </li>
+              </ul>
+
+            </div>
+
             <ul class="menu__list">
               <li class="menu__item">
                 <a href="#" class="menu__link">
@@ -84,12 +164,12 @@
                 </button>
               </li>
 
-               <li class="user-nav__item user-nav__item-hide">
-                 <button class="user-nav__btn user-nav__btn--search" type="button">
-                   <span class="user-nav__num" style="background-color: transparent;"></span>
-                   <span class="sr-only">поиск</span>
-                 </button>
-               </li>
+              <li class="user-nav__item user-nav__item-hide">
+                <button class="user-nav__btn user-nav__btn--search" type="button">
+                  <span class="user-nav__num" style="background-color: transparent;"></span>
+                  <span class="sr-only">поиск</span>
+                </button>
+              </li>
 
               <li class="user-nav__item">
                 <button class="user-nav__btn user-nav__btn--cart" type="button">
@@ -103,6 +183,10 @@
         </div>
       </div>
     </nav>
+     <form class="search__hide" action="#">
+       <input class="search__field" type="text" placeholder="Я ищу ..." required>
+       <button class="search__btn" type="submit">поиск</button>
+     </form>
   </header>
 
   <main class="main">
@@ -566,10 +650,10 @@
           </ul>
         </div>
       </div>
-        <button class="btn btn--products" type="button">
-          Показать ещё
-          <span class="sr-only">показать ещё</span>
-        </button>
+      <button class="btn btn--products" type="button">
+        Показать ещё
+        <span class="sr-only">показать ещё</span>
+      </button>
     </section>
 
     <div class="offers">
@@ -1079,8 +1163,8 @@
 
   </footer>
 
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/main.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>

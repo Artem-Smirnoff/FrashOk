@@ -15,27 +15,29 @@ body {
 }
 
 .main {
- flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .breadcrumbs {
   background-color: $silver-100;
 
   &__list {
-     display: flex;
-     padding: 24px 0;
+    display: flex;
+    padding: 24px 0;
   }
 
   &__item {
     position: relative;
     margin-right: 16px;
-    
+
     &:last-child {
       margin-right: 0;
+
       &::before {
         display: none;
       }
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -51,6 +53,7 @@ body {
     color: inherit;
   }
 }
+
 
 .sr-only {
   position: absolute;
@@ -107,7 +110,26 @@ body {
     &::after {
       top: 10px;
     }
+  }
 
+  &-line--close {
+    position: absolute;
+    display: block;
+    background-color: #000000;
+    height: 2px;
+    width: 44px;
+    transform: rotate(-45deg);
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 44px;
+      height: 2px;
+      transform: rotate(90deg);
+      background-color: #000000;
+      top: 0;
+    }
   }
 }
 
@@ -387,6 +409,7 @@ body {
   max-width: 230px;
   display: flex;
   justify-content: space-between;
+
   @include max-w ($lg) {
     margin: 0 auto;
   }
@@ -422,19 +445,33 @@ body {
   }
 }
 
- .star {
-   padding-right: 18px;
-   font-weight: bold;
-   font-size: 14px;
-   background-image: url('../sprite.svg#star');
-   background-repeat: no-repeat;
-   background-position: 8px center;
- }
+.star {
+  padding-right: 18px;
+  font-weight: bold;
+  font-size: 14px;
+  background-image: url('../sprite.svg#star');
+  background-repeat: no-repeat;
+  background-position: 8px center;
+}
 
- .status {
-   text-transform: uppercase;
-   font-weight: 600;
-   font-size: 10px;
-   line-height: 1;
-   letter-spacing: 0.03em;
- }
+.status {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+.select-style {
+  margin-right: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &--list {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}

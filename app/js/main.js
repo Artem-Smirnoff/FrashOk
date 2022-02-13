@@ -1,5 +1,33 @@
 $(function () {
 
+  $('.shop-content__filter-btn').on('click', function () {
+    $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
+    $(this).addClass('shop-content__filter-btn--active');
+  })
+
+  $('.button-list').on('click', function () {
+    $('.top-products__item').addClass('top-products__item--list');
+    $('.shop-content__inner').addClass('shop-content__inner--list');
+    $('.card').addClass('card--list');
+  });
+
+  $('.button-grid').on('click', function () {
+    $('.top-products__item').removeClass('top-products__item--list');
+    $('.shop-content__inner').removeClass('shop-content__inner--list');
+    $('.card').removeClass('card--list');
+  });
+
+  $('.user-nav__btn--search').on('click', function () {
+    $('.search__hide').toggleClass('search__hide--active')
+  })
+
+  $('.menu__btn').on('click', function () {
+    $('.menu-hide').toggleClass('menu-hide--active')
+  })
+
+  $('.filter__title').on('click', function () {
+    $(this).toggleClass('filter__title--active');
+  })
 
   $('.filter-price__input').ionRangeSlider({
     type: "double",
