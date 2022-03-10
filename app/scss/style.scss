@@ -658,6 +658,7 @@
     margin-left: 15px;
     position: relative;
 
+
     &.top-products__item--list {
       max-width: 466px;
       width: 100%;
@@ -707,6 +708,7 @@
 
       .bages {
         margin-left: -14px;
+        margin-top: -5px;
       }
 
     }
@@ -1223,6 +1225,10 @@
     letter-spacing: 0.03em;
     color: $dark-900;
     margin-bottom: 57px;
+
+    @include max-w ($lg) {
+      font-size: 30px;
+    }
   }
 }
 
@@ -1232,6 +1238,14 @@
   max-width: 300px;
   width: 100%;
   margin-right: 30px;
+  background-color: #fff;
+
+  @include max-w ($md) {
+    position: absolute;
+    left: -100%;
+    z-index: 6;
+    max-width: 100%;
+  }
 
   &__item {
     margin-bottom: 30px;
@@ -1466,6 +1480,10 @@
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 48px;
+
+    @include max-w ($md) {
+      justify-content: flex-start;
+    }
   }
 
   &__filter-btn {
@@ -1497,15 +1515,33 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
 
+     @include max-w ($lg) {
+       grid-gap: 10px;
+     }
+
+     @include max-w ($sm) {
+        grid-template-columns: 1fr 1fr;
+     }
+
     &.shop-content__inner--list {
       grid-template-columns: 1fr 1fr;
     }
 
     .top-products__item {
       margin-bottom: 0;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .top-products__counter {
+      display: none;
     }
   }
 
+  &__filter-buttons {
+    @include max-w ($md) {
+      display: none;
+    }
+  }
 }
 
 .select-style {

@@ -29,6 +29,16 @@ $(function () {
     $(this).toggleClass('filter__title--active');
   })
 
+  $('.open-btn').on('click', function () {
+    $('.filter').css('left', '0');
+    $('.close-btn').css('display', 'block');
+  })
+
+  $('.close-btn').on('click', function () {
+    $('.filter').css('left', '-100%');
+    $(this).css('display', 'none');
+  })
+
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     onStart: function (data) {
