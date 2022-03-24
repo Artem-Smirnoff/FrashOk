@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <nav class="menu">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__wrapper header__wrapper--top">
+
+              <ul class="contact">
+                <li class="contact__item">
+                  <a class="contact__link contact__link--delivery" href="#">
+                    адрес и время доставки
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <a class="contact__link contact__link--phone" href="#">
+                    горячая линия 24/7
+                  </a>
+                </li>
+              </ul>
+              <button class="menu__btn" type="button">
+                <span class="menu__btn-line"></span>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    доставка
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    О нас
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">
+                    новости
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="header__inner">
+          <div class="container">
+            <div class="header__wrapper">
+              <a href="#" class="logo">
+                <img class="logo__img" src="images/icons/logo.svg" alt="логотип">
+              </a>
+
+              <button class="products" type="button">
+                Каталог продуктов
+              </button>
+
+              <form class="search" action="#">
+                <input class="search__field" type="text" placeholder="Найти в магазине ..." required>
+                <button class="search__btn" type="submit">поиск</button>
+              </form>
+
+              <ul class="user-nav">
+                <li class="user-nav__item">
+                  <button class="user-nav__btn user-nav__btn--user-link" type="button">
+                    <span class="user-nav__num" style="background-color: transparent;"></span>
+                    <span class="sr-only">профиль</span>
+                  </button>
+                </li>
+                <li class="user-nav__item">
+                  <button class="user-nav__btn user-nav__btn--heart" type="button">
+                    <span class="user-nav__num">12</span>
+                    <span class="sr-only">избранное</span>
+                  </button>
+                </li>
+
+                <li class="user-nav__item user-nav__item-hide">
+                  <button class="user-nav__btn user-nav__btn--search" type="button">
+                    <span class="user-nav__num" style="background-color: transparent;"></span>
+                    <span class="sr-only">поиск</span>
+                  </button>
+                </li>
+
+                <li class="user-nav__item">
+                  <button class="user-nav__btn user-nav__btn--cart" type="button">
+                    <span class="user-nav__num">12</span>
+                    <span class="sr-only">корзина</span>
+                  </button>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Питахайя красная с белой мякотью</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="product">
+        <div class="container">
+          <div class="product__inner">
+            <div class="product-slider">
+              <div class="product-slider__item">
+                <img src="images/product/dragonfruit.png" alt="Питахайя красная с белой мякотью"
+                  class="product-slider__img">
+              </div>
+              <div class="product-slider__item">
+                <img src="images/product/dragonfruit.png" alt="Питахайя красная с белой мякотью"
+                  class="product-slider__img">
+              </div>
+              <div class="product-slider__item">
+                <img src="images/product/dragonfruit.png" alt="Питахайя красная с белой мякотью"
+                  class="product-slider__img">
+              </div>
+            </div>
+
+            <div class="product-content">
+              <div class="product-content__title">
+                Питахайя красная с белой мякотью
+              </div>
+              <div class="bages">
+                <span class="bages__decor hide" style="background-color: #63a60f;"></span>
+                <span class="bages__decor hide" style="background-color: #cf3e3b"></span>
+                <span class="bages__decor" style="background-color: #ff7a00">хит</span>
+              </div>
+              <div class="product-content__box">
+                <div class="product-content__box-item">
+                  <p class="product-content__box-code">Код: 0111111</p>
+                  <div class="rating-star"></div>
+                </div>
+                <div class="product-content__box-item">
+                  <div class="status" style="color: #63a60f;">в наличии</div>
+                </div>
+              </div>
+              <div class="product-content__price-box">
+                <span class="product-content__price-old top-products__price-old">299<span
+                    class="product-content__valut">₽</span></span>
+                <span class="product-content__price">199<span class="product-content__valut">₽</span></span>
+              </div>
+              <div class="product-content__btn">
+                <div class="product-content__btn-item">
+                  <form class="top-products__counter" action="#">
+                    <button class="top-products__count-btn top-products__count-btn--minus"></button>
+                    <input class="top-products__count" type="text" placeholder="1">
+                    <button class="top-products__count-btn top-products__count-btn--plus"></button>
+                  </form>
+                  <button class="product-content__btn-button btn">
+                    ДОБАВИТЬ В КОРЗИНУ
+                    <span class="sr-only">в корзину</span>
+                  </button>
+                </div>
+                <div class="product-content__btn-item">
+                  <button class="favorite" type="button">
+                    <svg class="favorite__icon">
+                      <use xlink:href='sprite.svg#favorite'></use>
+                    </svg>
+                    <span class="sr-only">в избранное</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="product-content__services">
+                <div class="product-content__services-title">
+                  Доставка и оплата
+                </div>
+                <ul class="product-content__services-list">
+                  <li class="product-content__services-item">
+                    Минимальная сумма заказа - 100 руб.
+                  </li>
+                  <li class="product-content__services-item">
+                    Время доставки заказа - 60-120 мин.
+                  </li>
+                  <li class="product-content__services-item">
+                    Оплата осуществляется только банковской картой.
+                  </li>
+                  <li class="product-content__services-item">
+                    Окончательная сумма заказа формируется после сбора товаров.
+                  </li>
+                </ul>
+                <a href="#" class="product-content__services-link">Подробнее</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a class="logo footer__logo" href="#">
+          <img src="images/icons/logo.svg" alt="логотип" class="logo__img">
+        </a>
+        <div class="footer__inner">
+          <div class="footer__form">
+            <div class="footer__text">
+              <p>Следите за нашими акциями</p>
+            </div>
+            <form class="footer__form" action="#">
+              <input class="footer__email" type="text" placeholder="email@email.com" required>
+              <button class="footer__button animate" type="submit">подписаться</button>
+            </form>
+
+          </div>
+          <nav class="menu footer__menu">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__item-link" href="">О нас</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__item-link" href="">Контакты</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__item-link" href="">Публичная оферта</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__item-link" href="">Оплата и доставка</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__item-link" href="">Вакансии</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__item-link" href="">Акции</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__item-link" href="">Отзывы</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__item-link" href="">Новости</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="address">
+            <a class="address__phone" href="tel:+7907288365">Горячая линия
+              +7 907 288 365
+            </a>
+            <a class="address__phone" href="#">
+              Санкт-Петербург, ул. Ленина, 1
+            </a>
+
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link social__link--facebook"></a>
+              </li>
+
+              <li class="social__item">
+                <a href="" class="social__link social__link--youtube"></a>
+              </li>
+
+              <li class="social__item">
+                <a href="" class="social__link social__link--telegram"></a>
+              </li>
+
+              <li class="social__item">
+                <a href="" class="social__link social__link--instagram"></a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-wrap">
+            <p class="footer__copy">© 2021 фрешок</p>
+            <div class="footer__pay">
+              <img class="footer__pay-visa" src="images/icons/visa.svg" alt="visa">
+              <img class="footer__pay-master-card" src="images/icons/mc.svg" alt="master card">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </div>
+
+  <script src="js/mixitup.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

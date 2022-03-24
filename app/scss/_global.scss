@@ -516,13 +516,17 @@ body {
     }
   }
 
-  &__item:nth-child(2) {
-    display: none;
+  @include max-w($sm) {
+    &__item:nth-child(2) {
+      display: none;
+    }
+
+    &__item:nth-child(4) {
+      display: none;
+    }
   }
 
-  &__item:nth-child(4) {
-    display: none;
-  }
+  
 
   &__arrow {
     width: 48px;
