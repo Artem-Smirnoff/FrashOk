@@ -208,10 +208,483 @@
                 <a href="#" class="product-content__services-link">Подробнее</a>
               </div>
             </div>
+          </div>
+        </div>
 
+        <div class="product-tabs">
+          <div class="container">
+            <div class="product-tabs__top">
+              <a class="product-tabs__top-item product-tabs__top-item--active" href="#tab-1">
+                ОПИСАНИЕ
+              </a>
+              <a class="product-tabs__top-item" href="#tab-2">
+                ХАРАКТЕРИСТИКИ
+              </a>
+              <a class="product-tabs__top-item" href="#tab-3">
+                ОТЗЫВЫ (2)
+              </a>
+            </div>
+            <div class="product-tabs__content">
+              <div class="product-tabs__content-item product-tabs__content-item--active" id="tab-1">
+                <p class="product-tabs__content-text">
+                  Питахайя – это источник питательных веществ и витаминов. Содержит витамин С, который способствует
+                  укреплению иммунной системы. В составе питайи много клетчатки, она благотворно влияет на работу ЖКТ.
+                  Оказывает противовоспалительное действие, так как фрукт богат антиоксидантами. При употреблении
+                  питахайи, понижается уровень сахара в крови, улучшается зрение и работа сердечно–сосудистой системы.
+                  Так
+                  как фрукт низкокалорийный и состоит на 90% из воды, способствует снижению веса.
+                </p>
+                <p class="product-tabs__content-text">
+                  Витамины: С, Е, РР, витамины группы В
+                </p>
+                <p class="product-tabs__content-text">
+                  Микроэлементы: железо, калий, кальций, магний, фосфор
+                </p>
+                <p class="product-tabs__content-text">
+                  Внешний вид товара может отличаться от изображений, представленных на сайте.
+                </p>
+              </div>
+              <div class="product-tabs__content-item" id="tab-2">
+                <ul class="product-tabs__content-list">
+                  <li class="product-tabs__list-item">
+                    <span>Вес: </span>250-350 г;
+                  </li>
+                  <li class="product-tabs__list-item">
+                    <span>Калорийность (на 100г):</span> 50 ккал;
+                  </li>
+                  <li class="product-tabs__list-item">
+                    <span>Условия хранения: </span>температура от +3 до +8;
+                  </li>
+                  <li class="product-tabs__list-item">
+                    <span>Другие названия: </span>Драконов фрукт, Глаз дракона;
+                  </li>
+                  <li class="product-tabs__list-item">
+                    <span>Страна происхождения: </span>Вьетнам;
+                  </li>
+                  <li class="product-tabs__list-item">
+                    <span>Срок хранения: </span>до 5 дней.
+                  </li>
+                </ul>
+              </div>
+              <div class="product-tabs__content-item" id="tab-3">
+                <h4 class="product-title">
+                  МНЕНИЯ НАШИХ КЛИЕНТОВ
+                </h4>
+                <ul class="reviews">
+                  <li class="reviews__item">
+                    <div class="reviews__item-top">
+                      <img class="reviews__item-img" src="images/product/review-img.jpg" alt="">
+                      <div class="reviews__item-name">
+                        Андрей
+                        <span>10.06.2021</span>
+                      </div>
+                      <div class="rating-star" data-rateyo-rating="4"></div>
+                    </div>
+                    <div class="reviews__item-text">
+                      <p>Яркий цвет, нежный вкус. Очень свежий и приятный, буду пробовать еще!))</p>
+                    </div>
+                  </li>
+                  <li class="reviews-item">
+                    <div class="reviews__item-top">
+                      <img class="reviews__item-img" src="images/product/review-img.jpg" alt="">
+                      <div class="reviews__item-name">
+                        Екатерина Белая
+                        <span>7.06.2021</span>
+                      </div>
+                      <div class="rating-star" data-rateyo-rating="5"></div>
+                    </div>
+                    <div class="reviews__item-text">
+                      <p>Цвет, конечно, очень насыщенный! Ожидаешь, что и вкус будет такой же яркий (просто взрыв), но
+                        нет. Вкус "сдержанно-сладкий" и очень-очень свежий! Рад, что есть такая возможность - пробовать
+                        экзотические фрукты.</p>
+                    </div>
+                  </li>
+                </ul>
+
+                <h4 class="product-title">
+                  ОСТАВИТЬ ОТЗЫВ
+                </h4>
+
+                <form class="product-tabs__form" action="#">
+                  <label class="product-tabs__form-rating">
+                    <p class="product-tabs__form-inputtext">Ваша оценка *</p>
+                    <div class="rating-star" data-rateyo-rating="0" data-rateyo-read-only="false"></div>
+                  </label>
+                  <div class="product-tabs__form-inner">
+                    <label class="product-tabs__form-review">
+                      <p class="product-tabs__form-inputtext">Ваш отзыв *</p>
+                      <textarea class="product-tabs__form-textarea" name="review"
+                        placeholder="Введите текст отзыва"></textarea>
+                    </label>
+                    <div class="product-tabs__form-data">
+                      <label class="product-tabs__form-name">
+                        <p class="product-tabs__form-inputtext">Имя</p>
+                        <input class="product-tabs__form-input" type="text" placeholder="Введите ваше имя">
+                      </label>
+                      <label class="product-tabs__form-mail">
+                        <p class="product-tabs__form-inputtext">Email *</p>
+                        <input class="product-tabs__form-input" type="text" placeholder="youremail@mail.com">
+                      </label>
+                    </div>
+                  </div>
+                  <label class="product-tabs__form-checkbox">
+                    <input class="filter-offer__input filter__input" type="checkbox">
+                    <span class="filter-offer__checkbox filter__checkbox"></span>
+                    <p>Сохранить моё имя, email и адрес сайта в этом браузере для последующих моих комментариев.</p>
+                  </label>
+                  <button class="btn" type="submit">
+                    Оставить отзыв
+                    <span class="sr-only">Оставить отзыв</span>
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="tabs-slider">
+        <div class="container">
+          <h4 class="product-title">ВАС МОЖЕТ ЗАИНТЕРЕСОВАТЬ</h4>
+          <ul class="tabs-slider__list">
+            <li class="top-products__item">
+              <article class="card">
+                <div class="top-products__wrap">
+                  <div class="bages">
+                    <span class="bages__decor" style="background-color: #63a60f">новинка</span>
+                    <span class="bages__decor" style="background-color: #cf3e3b">-50%</span>
+                    <span class="bages__decor hide" style="background-color: #ff7a00"></span>
+                  </div>
+                  <button class="favorite" type="button">
+                    <svg class="favorite__icon">
+                      <use xlink:href='sprite.svg#favorite'></use>
+                    </svg>
+                    <span class="sr-only">в избранное</span>
+                  </button>
+                </div>
+
+                <a class="top-products__link" href="#">
+                  <img class="top-products__img" src="images/top/pineapple.png" alt="ананас">
+                </a>
+                <h3 class="top-products__name">Ананас, 1кг</h3>
+
+                <form class="top-products__counter" action="#">
+                  <button class="top-products__count-btn top-products__count-btn--minus"></button>
+                  <input class="top-products__count" type="text" placeholder="1">
+                  <button class="top-products__count-btn top-products__count-btn--plus"></button>
+                </form>
+
+                <div class="top-products__wrap">
+                  <div class="top-products__price">
+                    <span class="top-products__price-old">1999 <span class="top-products__valut">₽</span></span>
+                    <span class="top-products__price">999 <span class="top-products__valut">₽</span></span>
+                  </div>
+
+                  <button class="cart" type="button">
+                    <span class="sr-only">добавить в корзину</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="top-products__item">
+              <article class="card">
+                <div class="top-products__wrap">
+                  <div class="bages">
+                    <span class="bages__decor hide" style="background-color: #63a60f"></span>
+                    <span class="bages__decor" style="background-color: #cf3e3b;">-50%</span>
+                    <span class="bages__decor hide" style="background-color: #ff7a00"></span>
+                  </div>
+
+                  <button class="favorite" type="button">
+                    <svg class="favorite__icon">
+                      <use xlink:href='sprite.svg#favorite'></use>
+                    </svg>
+                    <span class="sr-only">в избранное</span>
+                  </button>
+                </div>
+
+                <a class="top-products__link" href="#">
+                  <img class="top-products__img" src="images/top/lemon.png" alt="лимон">
+                </a>
+
+                <h3 class="top-products__name">Лимон, 1кг</h3>
+
+                <form class="top-products__counter" action="#">
+                  <button class="top-products__count-btn top-products__count-btn--minus"></button>
+                  <input class="top-products__count" type="text" placeholder="1">
+                  <button class="top-products__count-btn top-products__count-btn--plus"></button>
+                </form>
+
+                <div class="top-products__wrap">
+                  <div class="top-products__price">
+                    <span class="top-products__price-old"></span>
+                    <span class="top-products__price">199 <span class="top-products__valut">₽</span></span>
+                  </div>
+
+                  <button class="cart" type="button">
+                    <span class="sr-only">добавить в корзину</span>
+                  </button>
+                </div>
+              </article>
+
+            </li>
+
+            <li class="top-products__item">
+              <article class="card">
+                <div class="top-products__wrap">
+                  <div class="bages">
+                    <span class="bages__decor hide" style="background-color: #63a60f;"></span>
+                    <span class="bages__decor hide" style="background-color: #cf3e3b;"></span>
+                    <span class="bages__decor" style="background-color: #ff7a00">хит</span>
+                  </div>
+                  <button class="favorite" type="button">
+                    <svg class="favorite__icon">
+                      <use xlink:href='sprite.svg#favorite'></use>
+                    </svg>
+                    <span class="sr-only">в избранное</span>
+                  </button>
+                </div>
+
+                <a class="top-products__link" href="#">
+                  <img class="top-products__img" src="images/top/pitahaya.png" alt="питахайя">
+                </a>
+
+                <h3 class="top-products__name">Питахайя красная с белой мякотью, 1шт</h3>
+
+                <form class="top-products__counter" action="#">
+                  <button class="top-products__count-btn top-products__count-btn--minus"></button>
+                  <input class="top-products__count" type="text" placeholder="1">
+                  <button class="top-products__count-btn top-products__count-btn--plus"></button>
+                </form>
+
+                <div class="top-products__wrap">
+                  <div class="top-products__price">
+                    <span class="top-products__price-old"></span>
+                    <span class="top-products__price">1019 <span class="top-products__valut">₽</span></span>
+                  </div>
+
+                  <button class="cart" type="button">
+                    <span class="sr-only">добавить в корзину</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="top-products__item">
+              <article class="card">
+                <div class="top-products__wrap">
+                  <div class="bages">
+                    <span class="bages__decor" style="background-color: #63a60f">новинка</span>
+                    <span class="bages__decor hide" style="background-color: #cf3e3b;"></span>
+                    <span class="bages__decor hide" style="background-color: #ff7a00"></span>
+                  </div>
+                  <button class="favorite" type="button">
+                    <svg class="favorite__icon">
+                      <use xlink:href='sprite.svg#favorite'></use>
+                    </svg>
+                    <span class="sr-only">в избранное</span>
+                  </button>
+                </div>
+
+                <a class="top-products__link" href="#">
+                  <img class="top-products__img" src="images/top/peper.png" alt="перец">
+                </a>
+
+                <h3 class="top-products__name">Перец оранжевый, 1кг</h3>
+
+                <form class="top-products__counter" action="#">
+                  <button class="top-products__count-btn top-products__count-btn--minus"></button>
+                  <input class="top-products__count" type="text" placeholder="1">
+                  <button class="top-products__count-btn top-products__count-btn--plus"></button>
+                </form>
+
+                <div class="top-products__wrap">
+                  <div class="top-products__price">
+                    <span class="top-products__price-old"></span>
+                    <span class="top-products__price">349 <span class="top-products__valut">₽</span></span>
+                  </div>
+
+                  <button class="cart" type="button">
+                    <span class="sr-only">добавить в корзину</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="top-products__item">
+              <article class="card">
+                <div class="top-products__wrap">
+                  <div class="bages">
+                    <span class="bages__decor hide" style="background-color: #63a60f;"></span>
+                    <span class="bages__decor hide" style="background-color: #cf3e3b"></span>
+                    <span class="bages__decor" style="background-color: #ff7a00">хит</span>
+                  </div>
+                  <button class="favorite" type="button">
+                    <svg class="favorite__icon">
+                      <use xlink:href='sprite.svg#favorite'></use>
+                    </svg>
+                    <span class="sr-only">в избранное</span>
+                  </button>
+                </div>
+
+                <a class="top-products__link" href="#">
+                  <img class="top-products__img" src="images/top/carrot.png" alt="морковь">
+                </a>
+
+                <h3 class="top-products__name">Морковь молодая с бабушкиной грядки, 1кг</h3>
+
+                <form class="top-products__counter" action="#">
+                  <button class="top-products__count-btn top-products__count-btn--minus"></button>
+                  <input class="top-products__count" type="text" placeholder="1">
+                  <button class="top-products__count-btn top-products__count-btn--plus"></button>
+                </form>
+
+                <div class="top-products__wrap">
+                  <div class="top-products__price">
+                    <span class="top-products__price-old"></span>
+                    <span class="top-products__price">49 <span class="top-products__valut">₽</span></span>
+                  </div>
+
+                  <button class="cart" type="button">
+                    <span class="sr-only">добавить в корзину</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="top-products__item">
+              <article class="card">
+                <div class="top-products__wrap">
+                  <div class="bages">
+                    <span class="bages__decor hide" style="background-color: #63a60f;"></span>
+                    <span class="bages__decor" style="background-color: #cf3e3b">-30%</span>
+                    <span class="bages__decor hide" style="background-color: #ff7a00;"></span>
+                  </div>
+
+                  <button class="favorite" type="button">
+                    <svg class="favorite__icon">
+                      <use xlink:href='sprite.svg#favorite'></use>
+                    </svg>
+                    <span class="sr-only">в избранное</span>
+                  </button>
+                </div>
+
+                <a class="top-products__link" href="#">
+                  <img class="top-products__img" src="images/top/drink.png"
+                    alt="Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин безалкогольн...">
+                </a>
+
+
+                <h3 class="top-products__name">Напиток сокосодержащий Sanpellegrino Aranciata Orange Красный апельсин
+                  безалкогольн...
+                </h3>
+
+                <form class="top-products__counter" action="#">
+                  <button class="top-products__count-btn top-products__count-btn--minus"></button>
+                  <input class="top-products__count" type="text" placeholder="1">
+                  <button class="top-products__count-btn top-products__count-btn--plus"></button>
+                </form>
+
+                <div class="top-products__wrap">
+                  <div class="top-products__price">
+                    <span class="top-products__price-old">299 <span class="top-products__valut">₽</span></span>
+                    <span class="top-products__price">199 <span class="top-products__valut">₽</span></span>
+                  </div>
+
+                  <button class="cart" type="button">
+                    <span class="sr-only">добавить в корзину</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="top-products__item">
+              <article class="card">
+                <div class="top-products__wrap">
+                  <div class="bages">
+                    <span class="bages__decor" style="background-color: #63a60f">новинка</span>
+                    <span class="bages__decor hide" style="background-color: #cf3e3b;"></span>
+                    <span class="bages__decor hide" style="background-color: #ff7a00"></span>
+                  </div>
+                  <button class="favorite" type="button">
+                    <svg class="favorite__icon">
+                      <use xlink:href='sprite.svg#favorite'></use>
+                    </svg>
+                    <span class="sr-only">в избранное</span>
+                  </button>
+                </div>
+
+                <a class="top-products__link" href="#">
+                  <img class="top-products__img" src="images/top/coffe.png" alt="кофе с коноплей">
+                </a>
+
+                <h3 class="top-products__name">Кофе с коноплей органический Caffé Salomoni 250г</h3>
+
+                <form class="top-products__counter" action="#">
+                  <button class="top-products__count-btn top-products__count-btn--minus"></button>
+                  <input class="top-products__count" type="text" placeholder="1">
+                  <button class="top-products__count-btn top-products__count-btn--plus"></button>
+                </form>
+
+                <div class="top-products__wrap">
+                  <div class="top-products__price">
+                    <span class="top-products__price-old"></span>
+                    <span class="top-products__price">877 <span class="top-products__valut">₽</span></span>
+                  </div>
+
+                  <button class="cart" type="button">
+                    <span class="sr-only">добавить в корзину</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+
+            <li class="top-products__item">
+              <article class="card">
+                <div class="top-products__wrap">
+                  <div class="bages">
+                    <span class="bages__decor hide" style="background-color: #63a60f"></span>
+                    <span class="bages__decor hide" style="background-color: #cf3e3b;"></span>
+                    <span class="bages__decor hide" style="background-color: #ff7a00"></span>
+                  </div>
+                  <button class="favorite" type="button">
+                    <svg class="favorite__icon">
+                      <use xlink:href='sprite.svg#favorite'></use>
+                    </svg>
+                    <span class="sr-only">в избранное</span>
+                  </button>
+                </div>
+
+                <a class="top-products__link" href="#">
+                  <img class="top-products__img" src="images/top/ketchup.png" alt="кетчуп детский">
+                </a>
+
+                <h3 class="top-products__name">Кетчуп томатный детский органический Bio-Zentrale 500мл</h3>
+
+                <form class="top-products__counter" action="#">
+                  <button class="top-products__count-btn top-products__count-btn--minus"></button>
+                  <input class="top-products__count" type="text" placeholder="1">
+                  <button class="top-products__count-btn top-products__count-btn--plus"></button>
+                </form>
+
+                <div class="top-products__wrap">
+                  <div class="top-products__price">
+                    <span class="top-products__price-old"></span>
+                    <span class="top-products__price">600 <span class="top-products__valut">₽</span></span>
+                  </div>
+
+                  <button class="cart" type="button">
+                    <span class="sr-only">добавить в корзину</span>
+                  </button>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
 
 
 
